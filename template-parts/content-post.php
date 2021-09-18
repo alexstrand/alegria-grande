@@ -12,7 +12,7 @@
 <div class="container-fluid">
 	<div class="row">
 		
-		<div class="container content__wrapper">
+		<div class="container content__wrapper p-100">
 			<div class="row">
 				
 				<article id="post-<?php the_ID(); ?>" class="post-id-<?php echo get_the_ID(); ?> col-12">

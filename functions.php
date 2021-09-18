@@ -150,6 +150,9 @@ function alegria_grande_scripts() {
 	
 	// Alegriagrande app.js
 	wp_enqueue_script( 'alegria-grande-app-js', get_template_directory_uri() . '/js/app.js');
+	
+	// Animate.js
+	wp_enqueue_style( 'alegria-grande-animate', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -183,4 +186,10 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+// Display current year
+function currentYear( $atts ){
+    return date('Y');
+}
+add_shortcode( 'year', 'currentYear' );
 

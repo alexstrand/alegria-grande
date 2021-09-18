@@ -30,11 +30,11 @@
 
 	<header id="masthead" class="site-header d-flex justify-content-between align-items-center">
 		<div class="container-fluid">
-			<!--<div class="row">
-				<div class="container">-->
+			<div class="row">
+				<div class="container">
 					<div class="row d-flex justify-content-between align-items-center">
 						
-						<div class="site-branding col-md-6">
+						<div class="site-branding col-6 col-lg-3">
 							<?php
 							the_custom_logo();
 							if ( is_front_page() && is_home() ) :
@@ -49,7 +49,7 @@
 							?>
 						</div><!-- .site-branding -->
 				
-						<nav id="site-navigation" class="main-navigation col-md-6">
+						<nav id="site-navigation" class="main-navigation col-6">
 							<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'alegria-grande' ); ?></button>
 							<?php
 							wp_nav_menu(
@@ -61,8 +61,12 @@
 							?>
 						</nav><!-- #site-navigation -->
 						
+						<div class="social__icons col-3 d-none d-lg-block">
+							<?php get_template_part( 'template-parts/social-icons' ); ?>
+						</div>
+						
 					</div>
-				<!--</div>
-			</div>-->
+				</div>
+			</div>
 		</div>
 	</header><!-- #masthead -->
