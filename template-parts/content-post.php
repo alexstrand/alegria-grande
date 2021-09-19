@@ -21,10 +21,10 @@
 						<div class="post__date"><?php echo get_the_date(); ?></div>
 					</header><!-- .entry-header -->
 				
-					<div class="entry-content p-50">
+					<div class="entry-content">
 						<?php
 						
-						alegria_grande_post_thumbnail();
+						//alegria_grande_post_thumbnail();
 						
 						the_content();
 				

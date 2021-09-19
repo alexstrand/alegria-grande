@@ -14,11 +14,6 @@ jQuery( document ).ready(function($) {
         
     });
     
-    // Remove page cover on full load
-    $(window).load(function(){
-        $("body #page").addClass("loaded");
-    });
-    
     // Fade hero contents on scroll
     var heroContent = $('#home-hero #home-hero__content'),
         limit = $(window).outerHeight() * .75;
@@ -71,5 +66,8 @@ jQuery( document ).ready(function($) {
         }
         
     });
+    
+    // Remove cover
+    $("body #page").addClass("loaded");
     
 });

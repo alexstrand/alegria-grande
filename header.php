@@ -48,7 +48,7 @@
 				<div class="container">
 					<div class="row d-flex justify-content-between align-items-center">
 						
-						<div class="site-branding col-10 col-lg-3">
+						<div class="site-branding col-10 col-lg-4">
 							<?php
 							the_custom_logo();
 							if ( is_front_page() && is_home() ) :
@@ -63,36 +63,38 @@
 							?>
 						</div><!-- .site-branding -->
 				
-						<nav id="site-navigation" class="main-navigation col-2 col-lg-6 d-flex justify-content-end d-lg-block">
-							<button id="hamburger-toggle" class="hamburger hamburger--squeeze menu-toggle d-block d-lg-none" aria-expanded="false" type="button">
-							  <span class="hamburger-box">
-							    <span class="hamburger-inner"></span>
-							  </span>
-							</button>
+						<div class=" col-2 col-lg-8 d-flex justify-content-end align-items-center">
+							<nav id="site-navigation" class="main-navigation">
+								<button id="hamburger-toggle" class="hamburger hamburger--squeeze menu-toggle d-block d-lg-none" aria-expanded="false" type="button">
+								  <span class="hamburger-box">
+								    <span class="hamburger-inner"></span>
+								  </span>
+								</button>
+								
+								<?php
+								wp_nav_menu(
+									array(
+										'theme_location' => 'menu-1',
+										'menu_id'        => 'hamburger-menu',
+										'menu_class'	 => 'd-flex flex-column align-items-center justify-content-center',
+									)
+								);
+								?>
+								
+								<?php
+								wp_nav_menu(
+									array(
+										'theme_location' => 'menu-1',
+										'menu_id'        => 'primary-menu',
+										'menu_class'	 => 'd-none d-lg-flex justify-content-end',
+									)
+								);
+								?>
+							</nav><!-- #site-navigation -->
 							
-							<?php
-							wp_nav_menu(
-								array(
-									'theme_location' => 'menu-1',
-									'menu_id'        => 'hamburger-menu',
-									'menu_class'	 => 'd-flex flex-column align-items-center justify-content-center',
-								)
-							);
-							?>
-							
-							<?php
-							wp_nav_menu(
-								array(
-									'theme_location' => 'menu-1',
-									'menu_id'        => 'primary-menu',
-									'menu_class'	 => 'd-none d-lg-flex justify-content-center',
-								)
-							);
-							?>
-						</nav><!-- #site-navigation -->
-						
-						<div class="social__icons col-3 d-none d-lg-block">
-							<?php get_template_part( 'template-parts/social-icons' ); ?>
+							<div class="social__icons d-none d-lg-block">
+								<?php get_template_part( 'template-parts/social-icons' ); ?>
+							</div>
 						</div>
 						
 					</div>
