@@ -24,11 +24,17 @@
 					<div class="col-12">
 						© <?php echo get_bloginfo( 'name' ); ?> <?php echo do_shortcode('[year]'); ?>
 					</div>
+					
+					<!-- Scroll to top arrow -->
+					<a id="scroll-top__arrow" href="#masthead">
+						<i class="fas fa-chevron-up"></i>
+					</a>
 			
 				</div><!-- .site-info -->
 			</div>
 		</div>
 	</footer><!-- #colophon -->
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

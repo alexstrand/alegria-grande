@@ -5,11 +5,15 @@
 		<div class="container">
 			<div class="row d-flex flex-column-reverse flex-md-row">
 				
-				<div id="home-hero__content" class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-start">
+				<div id="home-hero__content" class="col-12 col-md-8 col-lg-6 d-flex flex-column justify-content-center align-items-start">
 			
 					<h1 class="hero-headline">Welcome ❤️</h1>
 					<p class="large-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum arcu quam, quis lobortis turpis sollicitudin ac. In condimentum elit magna, vulputate gravida sapien iaculis vitae. Proin vulputate tortor sit amet nisl porta efficitur. Mauris eget mauris fringilla, egestas ex non, gravida lectus.</p>
-					<a href="#latest-posts" title="" class="button button-primary">Learn more</a>
+					
+					<div class="d-flex justify-content-start">
+						<a href="#latest-posts" title="" class="button button-primary">Latest stories</a>
+						<a href="/about" title="" class="button button-alt">About Johanna</a>
+					</div>
 				
 				</div><!-- #home-hero__content -->
 				
@@ -25,6 +29,6 @@
 	</div>
 	
 	<!-- scroll down arrow -->
-	<a href="#latest-posts" class="scroll-arrow" title="Latest posts from Alegriagrande"></a>
+	<!--<a href="#latest-posts" class="scroll-arrow d-none d-md-block" title="Latest posts from Alegriagrande"></a>-->
 	
 </section><!-- #Home hero -->

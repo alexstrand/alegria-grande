@@ -19,8 +19,22 @@
 	
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,300&family=Over+the+Rainbow&family=Poppins:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+	<link href="/wp-content/themes/alegria-grande/inc/css/hamburgers.min.css" rel="stylesheet">
 	
 	<?php wp_head(); ?>
+	
+	<script> // Facet WP auto scroll to top after pagination
+	(function($) {
+	    $(document).on('facetwp-loaded', function() {
+	        if (FWP.loaded) {
+	            $('html, body').animate({
+	                scrollTop: $('#blog_filters').offset().top
+	            }, 500);
+	        }
+	    });
+	})(jQuery);
+	</script>
+	
 </head>
 
 <body <?php body_class(); ?>>
@@ -34,7 +48,7 @@
 				<div class="container">
 					<div class="row d-flex justify-content-between align-items-center">
 						
-						<div class="site-branding col-6 col-lg-3">
+						<div class="site-branding col-10 col-lg-3">
 							<?php
 							the_custom_logo();
 							if ( is_front_page() && is_home() ) :
@@ -49,13 +63,29 @@
 							?>
 						</div><!-- .site-branding -->
 				
-						<nav id="site-navigation" class="main-navigation col-6">
-							<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'alegria-grande' ); ?></button>
+						<nav id="site-navigation" class="main-navigation col-2 col-lg-6 d-flex justify-content-end d-lg-block">
+							<button id="hamburger-toggle" class="hamburger hamburger--squeeze menu-toggle d-block d-lg-none" aria-expanded="false" type="button">
+							  <span class="hamburger-box">
+							    <span class="hamburger-inner"></span>
+							  </span>
+							</button>
+							
+							<?php
+							wp_nav_menu(
+								array(
+									'theme_location' => 'menu-1',
+									'menu_id'        => 'hamburger-menu',
+									'menu_class'	 => 'd-flex flex-column align-items-center justify-content-center',
+								)
+							);
+							?>
+							
 							<?php
 							wp_nav_menu(
 								array(
 									'theme_location' => 'menu-1',
 									'menu_id'        => 'primary-menu',
+									'menu_class'	 => 'd-none d-lg-flex justify-content-center',
 								)
 							);
 							?>

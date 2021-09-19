@@ -17,13 +17,13 @@ if ($query->have_posts()) : ?>
     		
     		<div class="container">
     		    
-    		    <div class="row section__headline">
+    		    <div class="row section__headline p-50">
     		        <div class="col-12">
     		            <h2>Latest stories</h2>
     		        </div>
     		    </div>
 
-                <div class="row posts__wrapper p-50">
+                <div class="row posts__wrapper">
 	
             		<?php
             		while ( $query->have_posts() ) : $query->the_post(); ?>
@@ -34,7 +34,7 @@ if ($query->have_posts()) : ?>
             		
         		</div>
 
-        		<div class="row">
+        		<div class="row p-100">
         		    <div class="col-12 align-center d-flex justify-content-center">
         		        <a href="<?php echo get_home_url(); ?>/blog" title="" class="button button-primary">All stories</a>
         		    </div>
