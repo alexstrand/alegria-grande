@@ -7,12 +7,12 @@
 				
 				<div id="home-hero__content" class="col-12 col-md-8 col-lg-6 d-flex flex-column justify-content-center align-items-start">
 			
-					<h1 class="hero-headline">Welcome ❤️</h1>
-					<p class="large-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum arcu quam, quis lobortis turpis sollicitudin ac. In condimentum elit magna, vulputate gravida sapien iaculis vitae. Proin vulputate tortor sit amet nisl porta efficitur. Mauris eget mauris fringilla, egestas ex non, gravida lectus.</p>
+					<h1 class="hero-headline"><?php echo get_field('hero_headline'); ?></h1>
+					<p class="large-p"><?php echo get_field('hero_text'); ?></p>
 					
-					<div class="d-flex justify-content-start">
-						<a href="#latest-posts" title="" class="button button-primary">Latest stories</a>
-						<a href="/about" title="" class="button button-alt">About Johanna</a>
+					<div class="d-flex flex-column flex-md-row justify-content-start">
+						<a href="<?php echo get_field('button_1_url'); ?>" title="" class="button button-primary"><?php echo get_field('button_1_text'); ?></a>
+						<a href="<?php echo get_field('button_2_url'); ?>" title="" class="button button-alt"><?php echo get_field('button_2_text'); ?></a>
 					</div>
 				
 				</div><!-- #home-hero__content -->

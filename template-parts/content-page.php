@@ -17,7 +17,14 @@
 				
 				<article id="post-<?php the_ID(); ?>" class="post-id-<?php echo get_the_ID(); ?> col-12">
 					<header class="entry-header p-50">
-						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+						<?php 
+						
+						if ( get_field('custom_page_headline') ) :
+							echo '<h1 class="entry-title">' . get_field('custom_page_headline') . '</h1>';
+						else :
+							the_title( '<h1 class="entry-title">', '</h1>' ); 
+						endif;	
+						?>
 					</header><!-- .entry-header -->
 				
 					<?php alegria_grande_post_thumbnail(); ?>

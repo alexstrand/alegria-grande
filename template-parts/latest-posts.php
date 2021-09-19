@@ -19,7 +19,7 @@ if ($query->have_posts()) : ?>
     		    
     		    <div class="row section__headline p-50">
     		        <div class="col-12">
-    		            <h2>Latest stories</h2>
+    		            <h2><?php echo get_field('recent_posts_headline'); ?></h2>
     		        </div>
     		    </div>
 
