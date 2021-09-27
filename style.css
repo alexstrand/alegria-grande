@@ -1611,10 +1611,10 @@ body:not(.page-template-page-home) .main-navigation li.current-menu-item > a,
 
 @media screen and (min-width: 992px) {
 	
-	.posts__wrapper {
+	/*.posts__wrapper {
 		padding-left: 30px;
 		padding-right: 30px;
-	}
+	}*/
 	
 	.post .featured-image__container {
 		width: 100%;

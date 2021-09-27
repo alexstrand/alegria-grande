@@ -17,7 +17,9 @@
 			<div class="container">
 				
 				<div id="instagran__feed" class="row p-50">
-					<?php echo do_shortcode('[instagram-feed num=4 cols=4 showfollow=false showbutton=false]'); ?>
+					<div class="col-12">
+						<?php echo do_shortcode('[instagram-feed num=4 cols=4 showfollow=false showbutton=false]'); ?>
+					</div>
 				</div><!-- #instagran__feed -->
 				
 				<div class="social__icons">
