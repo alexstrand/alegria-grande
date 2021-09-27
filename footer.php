@@ -12,8 +12,13 @@
 ?>
 
 	<footer id="colophon" class="site-footer container-fluid p-50">
+		
 		<div class="row">
 			<div class="container">
+				
+				<div id="instagran__feed" class="row p-50">
+					<?php echo do_shortcode('[instagram-feed num=4 cols=4 showfollow=false showbutton=false]'); ?>
+				</div><!-- #instagran__feed -->
 				
 				<div class="social__icons">
 					<?php get_template_part( 'template-parts/social-icons' ); ?>
@@ -33,6 +38,7 @@
 				</div><!-- .site-info -->
 			</div>
 		</div>
+		
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->

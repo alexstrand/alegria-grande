@@ -12,7 +12,7 @@ $query = new WP_Query( $args );
 if ($query->have_posts()) : ?>
 
     <!-- Latest posts -->
-    <section id="latest-posts" class="container-fluid p-100">
+    <section id="latest-posts" class="container-fluid p-100 p-bottom-0">
     	<div class="row">
     		
     		<div class="container">
@@ -34,7 +34,7 @@ if ($query->have_posts()) : ?>
             		
         		</div>
 
-        		<div class="row p-100">
+        		<div class="row p-100 p-bottom-0">
         		    <div class="col-12 align-center d-flex justify-content-center">
         		        <a href="<?php echo get_home_url(); ?>/blog" title="" class="button button-primary">All stories</a>
         		    </div>

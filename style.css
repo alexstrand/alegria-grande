@@ -1041,6 +1041,10 @@ body.post {
 	padding-top: 20px;
 }
 
+.p-bottom-0 {
+	padding-bottom: 0px !important;
+}
+
 .bg-image {
 	background-size: cover;
 	background-repeat: no-repeat;
