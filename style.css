@@ -1764,3 +1764,14 @@ body:not(.page-template-page-home) .main-navigation li.current-menu-item > a,
 .page:not(.page-template-page-home) #primary h2 {
 	text-align: center;
 }
+
+/* Instagram feed */
+#sbi_images {
+	padding: 0 !important;
+	margin: 0 -15px !important;
+	width: calc(100% + 30px) !important;
+}
+
+#sb_instagram.sbi_col_4 #sbi_images .sbi_item {
+	padding: 15px !important;
+}
