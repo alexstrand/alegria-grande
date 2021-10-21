@@ -13,6 +13,7 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
+	<meta name="ahrefs-site-verification" content="9349a54deda410e50c76ae1a002aa0791ab9b3fa7fc1650c3d7d7c948845b26d">
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
