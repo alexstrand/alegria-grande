@@ -1736,7 +1736,8 @@ body:not(.page-template-page-home) .main-navigation li.current-menu-item > a,
 
 /* Single posts
 --------------------------------------------- */
-.single #primary .content__wrapper {
+.single #primary .content__wrapper,
+.single .post-footer {
 	max-width: 900px !important;
 	margin: 0 auto;
 }
@@ -1784,6 +1785,12 @@ body:not(.page-template-page-home) .main-navigation li.current-menu-item > a,
 .single #primary h1,
 .single-post #primary h2 {
 	text-align: center;
+}
+
+p.comment-form-email::after {
+    content: "(Your email will not be displayed)";
+    display: block;
+    font-size: .75em;
 }
 
 /* Single page
