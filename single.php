@@ -20,7 +20,7 @@ get_header();
 		?>
 		
 		<div class="container">
-			<div class="col-12">
+			<div class="col-12 post-footer">
 				<?php
 				the_post_navigation(
 					array(
