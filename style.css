@@ -1532,7 +1532,7 @@ body:not(.page-template-page-home) .main-navigation li.current-menu-item > a,
 	#home-hero,
 	#home-hero__content,
 	#home-hero__content-image {
-		min-height: 85vh;
+		min-height: 56.25vw;;
 	}
 }
 
