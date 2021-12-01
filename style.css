@@ -1529,11 +1529,21 @@ body:not(.page-template-page-home) .main-navigation li.current-menu-item > a,
 
 @media screen and (min-width: 992px) {
 	
+	#home-hero__content {
+		margin-top: 0;
+		padding-top: 3em;
+		padding-bottom: inherit;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	
 	#home-hero,
 	#home-hero__content,
 	#home-hero__content-image {
-		min-height: 56.25vw;;
+		min-height: 56.25vw;
 	}
+	
 }
 
 /* Posts
