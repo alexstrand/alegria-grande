@@ -1785,8 +1785,7 @@ body:not(.page-template-page-home) .main-navigation li.current-menu-item > a,
 }
 
 
-.single #primary h1,
-.single-post #primary h2 {
+.single #primary h1 {
 	text-align: center;
 }
 
