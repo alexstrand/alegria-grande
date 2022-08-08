@@ -13,6 +13,16 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-K9BR6NY1WT"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-K9BR6NY1WT');
+	</script>
+
 	<meta name="ahrefs-site-verification" content="9349a54deda410e50c76ae1a002aa0791ab9b3fa7fc1650c3d7d7c948845b26d">
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
